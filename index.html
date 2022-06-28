@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="icon" href="./imagenes/Logo/ISOLOGO-AZUL.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Pixel-Digital</title>
 </head>
 <body>
@@ -26,22 +27,23 @@
     </header>
     <main>
         <section id="portada">
-            <div class="portada-texto">
+            <div class="portada-texto animate__animated animate__fadeInLeft">
                 <h3>Hola Soy</h3>
                 <h1 class="portada-titulo">Leandro Mastromarino</h1>
                 <h2 class="portada-titulo">Ingeniero, desarrollador web y Trafficer Digital</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos in necessitatibus asperiores ipsum odio dolore, corrupti iure quam amet cum inventore velit blanditiis modi. Ullam corrupti iure itaque saepe possimus.</p>
                 <a class="boton" href="./views/contacto.html">Contacto</a>
             </div>
-            <img src="./assets/imagenes/Portada.png" alt="fondo-portada">
+            <img  src="./assets/imagenes/Portada.png" alt="fondo-portada">
+            
         </section>
         <section id="contratarme" class="seccion contratarme">
             <div class="grid-contratarme">
-                <div>
+                <div class="animate__animated animate__fadeInLeft">
                     <h2>Por qué contratarme</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus totam earum debitis et nesciunt doloremque veniam ducimus rem officia voluptatum dolorum iste illum qui ratione nemo labore, ea vitae fuga.</p>
                 </div>
-               <div>
+               <div class="animate__animated animate__fadeInRight">
                 <img src="./assets/imagenes/Captura de Pantalla 2022-06-14 a la(s) 20.40 1.png" alt="">
                </div>
             </div>
@@ -50,11 +52,11 @@
         </section>
         <section id="que-hago" class=" contratarme">
             <div class="grid-quehago">
-                <div>
+                <div class="animate__animated animate__fadeInLeft">
                     <h2>que hago?</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus totam earum debitis et nesciunt doloremque veniam ducimus rem officia voluptatum dolorum iste illum qui ratione nemo labore, ea vitae fuga.</p>
                 </div>
-               <div>
+               <div class="animate__animated animate__fadeInRight">
                 <img src="./assets/imagenes/Imagen PNG-D1A422F7E62A-1-2.png" alt="">
                </div>
             </div>
@@ -62,11 +64,11 @@
         <section id="servicios" class="contratarme">
             <h2>Servicios</h2>
             <div class="grid-servicios">
-                <div class="caja-servicios publicidad-online">
+                <div class="caja-servicios publicidad-online animate__animated animate__fadeInLeft">
                     <h2>Publicidad Online</h2>
                     <img src="./assets/imagenes/Online campaign_Two Color 1.svg" alt="">
                 </div>
-               <div class="caja-servicios desarrollo-web">
+               <div class="caja-servicios desarrollo-web animate__animated animate__fadeInRight">
                     <h2>Desarrollo WEB</h2>
                     <img src="./assets/imagenes/Code Development _Flatline 1.png" alt="">
                </div>
@@ -74,7 +76,7 @@
         </section>
     </main>
     <footer>
-        <div id="footer-contacto">
+        <div id="footer-contacto" class="wow bounceInUp">
             <h3>Comencemos a trabajar</h3>
             <p>Lorem ipsum dolor sit amet</p>
             <a class="boton" href="./views/contacto.html">Contacto</a>
@@ -96,5 +98,9 @@
         </div>
 
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 </html>
